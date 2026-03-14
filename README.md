@@ -415,7 +415,7 @@ loss_fn = nn.CrossEntropyLoss(
 
 **Adam** optimizer with the paper's custom **learning rate schedule** (warmup + inverse square root decay):
 
-$$lr = d_{model}^{-0.5} \cdot \min\left(\text{step}^{-0.5},\ \text{step} \cdot \text{warmup\_steps}^{-1.5}\right)$$
+<!-- $$lr = d_{model}^{-0.5} \cdot \min\left(\text{step}^{-0.5},\ \text{step} \cdot \text{warmup\_steps}^{-1.5}\right)$$ -->
 
 ```python
 optimizer = torch.optim.Adam(model.parameters(), lr=config['lr'], eps=1e-9)
@@ -528,7 +528,7 @@ Source:  The  cat  sat  on   the  mat  .
 | Decoding | Greedy |
 
 
-## 📚 References
+## References
 
 A great thanks to Umar Jamil for Transformer Demonstration.
 
